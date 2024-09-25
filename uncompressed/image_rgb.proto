@@ -3,8 +3,8 @@ package make87.images.uncompressed;
 import "google/protobuf/timestamp.proto";
 
 message ImageRGB {
-  google.protobuf.Timestamp timestamp = 1;
-  bytes data = 2;
-  uint32 width = 3;
-  uint32 height = 4;
+    google.protobuf.Timestamp timestamp = 1;
+    bytes data = 2;
+    uint32 width = 3;
+    uint32 height = 4;
 }

@@ -3,15 +3,15 @@ package make87.images.uncompressed;
 import "google/protobuf/timestamp.proto";
 
 message ImageRGBA {
-  message Pixel {
-    uint32 red = 1;
-    uint32 green = 2;
-    uint32 blue = 3;
-    uint32 alpha = 4;
-  }
+    message Pixel {
+        uint32 red = 1;
+        uint32 green = 2;
+        uint32 blue = 3;
+        uint32 alpha = 4;
+    }
 
-  google.protobuf.Timestamp timestamp = 1;
-  uint32 width = 2;
-  uint32 height = 3;
-  repeated Pixel pixels = 4; // List of pixels in row-major order
+    google.protobuf.Timestamp timestamp = 1;
+    uint32 width = 2;
+    uint32 height = 3;
+    repeated Pixel pixels = 4; // List of pixels in row-major order
 }

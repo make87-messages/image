@@ -3,12 +3,12 @@ package make87.images.uncompressed;
 import "google/protobuf/timestamp.proto";
 
 message ImageGray {
-  message Pixel {
-    uint32 intensity = 1; // Grayscale intensity value
-  }
+    message Pixel {
+        uint32 intensity = 1; // Grayscale intensity value
+    }
 
-  google.protobuf.Timestamp timestamp = 1;
-  uint32 width = 2;
-  uint32 height = 3;
-  repeated Pixel pixels = 4; // List of pixels in row-major order
+    google.protobuf.Timestamp timestamp = 1;
+    uint32 width = 2;
+    uint32 height = 3;
+    repeated Pixel pixels = 4; // List of pixels in row-major order
 }
